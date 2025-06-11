@@ -1,3 +1,2 @@
-# Ignore large datasets
-data/raw/fraudTest.csv
-data/raw/fraudTrain.csv
+data/
+source/models/
