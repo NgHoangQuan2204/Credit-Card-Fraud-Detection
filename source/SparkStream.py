@@ -65,19 +65,19 @@ def process_batch(batch_df, batch_id):
 
         y_true = pdf["is_fraud"]
 
-        # with open('D:/Project/Credit-Card-Fraud-Detection/notebooks/models/svc.pkl', 'rb') as f:
+        # with open('D:/Project/Credit-Card-Fraud-Detection/source/models/svc.pkl', 'rb') as f:
         #     svc = pickle.load(f)
-        # with open('D:/Project/Credit-Card-Fraud-Detection/notebooks/models/lr.pkl', 'rb') as f:
+        # with open('D:/Project/Credit-Card-Fraud-Detection/source/models/lr.pkl', 'rb') as f:
         #     lr = pickle.load(f)
-        # with open('D:/Project/Credit-Card-Fraud-Detection/notebooks/models/dtc.pkl', 'rb') as f:
-        #     dtc = pickle.load(f)
-        with open('D:/Project/Credit-Card-Fraud-Detection/notebooks/models/rfc.pkl', 'rb') as f:
-            rfc = pickle.load(f)
+        with open('D:/Project/Credit-Card-Fraud-Detection/source/models/dtc.pkl', 'rb') as f:
+            dtc = pickle.load(f)
+        # with open('D:/Project/Credit-Card-Fraud-Detection/source/models/rfc.pkl', 'rb') as f:
+        #     rfc = pickle.load(f)
 
         # y_pred = svc.predict(X)
         # y_pred = lr.predict(X)
-        # y_pred = dtc.predict(X)
-        y_pred = rfc.predict(X)
+        y_pred = dtc.predict(X)
+        # y_pred = rfc.predict(X)
 
         pdf["predicted"] = y_pred
         pdf["correct"] = (y_pred == y_true).astype(int)
@@ -86,18 +86,22 @@ def process_batch(batch_df, batch_id):
 
         elapsed = time.time() - start_time
 
+        pdf["TP"] = ((y_true == 1) & (y_pred == 1)).astype(int)
+        TP = pdf["TP"].sum()
+
+
         logging.basicConfig(
             level=logging.INFO,
             format="%(asctime)s [%(levelname)s] %(message)s",
             handlers=[
-                logging.FileHandler("D:/Project/Credit-Card-Fraud-Detection/notebooks/logs/rfc_log.txt"),
+                logging.FileHandler("D:/Project/Credit-Card-Fraud-Detection/source/logs/dtc_log.txt"),
                 logging.StreamHandler()
             ]
         )
         logger = logging.getLogger(__name__)
 
         num_rows = len(pdf)
-        logger.info(f"Batch {batch_id} | Quantity: {num_rows} | Accuracy: {accuracy:.4f} | Time: {elapsed:.4f} seconds")
+        logger.info(f"Batch {batch_id} | Quantity: {num_rows} | True Fraud Detected: {TP} | Accuracy: {accuracy:.4f} | Time: {elapsed:.4f} seconds")
 
 query = value_df.writeStream \
     .trigger(processingTime="10 seconds") \

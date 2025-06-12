@@ -1,21 +1,21 @@
-2025-06-12 02:28:49,173 [INFO] Batch 0 | Quantity: 23 | Accuracy: 1.0000 | Time: 2.4273 seconds
-2025-06-12 02:28:50,291 [INFO] Received command c on object id p0
-2025-06-12 02:28:50,550 [INFO] Batch 1 | Quantity: 412 | Accuracy: 1.0000 | Time: 0.2553 seconds
-2025-06-12 02:29:00,246 [INFO] Received command c on object id p0
-2025-06-12 02:29:00,489 [INFO] Batch 2 | Quantity: 902 | Accuracy: 0.9856 | Time: 0.2412 seconds
-2025-06-12 02:29:10,327 [INFO] Received command c on object id p0
-2025-06-12 02:29:10,630 [INFO] Batch 3 | Quantity: 838 | Accuracy: 0.9940 | Time: 0.2991 seconds
-2025-06-12 02:29:20,263 [INFO] Received command c on object id p0
-2025-06-12 02:29:20,436 [INFO] Batch 4 | Quantity: 885 | Accuracy: 1.0000 | Time: 0.1686 seconds
-2025-06-12 02:29:30,309 [INFO] Received command c on object id p0
-2025-06-12 02:29:30,478 [INFO] Batch 5 | Quantity: 846 | Accuracy: 1.0000 | Time: 0.1662 seconds
-2025-06-12 02:29:40,321 [INFO] Received command c on object id p0
-2025-06-12 02:29:40,516 [INFO] Batch 6 | Quantity: 817 | Accuracy: 1.0000 | Time: 0.1905 seconds
-2025-06-12 02:29:50,294 [INFO] Received command c on object id p0
-2025-06-12 02:29:50,453 [INFO] Batch 7 | Quantity: 832 | Accuracy: 0.9952 | Time: 0.1572 seconds
-2025-06-12 02:30:00,284 [INFO] Received command c on object id p0
-2025-06-12 02:30:00,488 [INFO] Batch 8 | Quantity: 816 | Accuracy: 1.0000 | Time: 0.2007 seconds
-2025-06-12 02:30:10,284 [INFO] Received command c on object id p0
-2025-06-12 02:30:10,450 [INFO] Batch 9 | Quantity: 835 | Accuracy: 1.0000 | Time: 0.1636 seconds
-2025-06-12 02:30:20,235 [INFO] Received command c on object id p0
-2025-06-12 02:30:20,435 [INFO] Batch 10 | Quantity: 824 | Accuracy: 1.0000 | Time: 0.1957 seconds
+2025-06-12 10:49:21,893 [INFO] Batch 0 | Quantity: 17 | True Fraud Detected: 0 | Accuracy: 0.3529 | Time: 1.4012 seconds
+2025-06-12 10:49:22,361 [INFO] Received command c on object id p0
+2025-06-12 10:49:22,542 [INFO] Batch 1 | Quantity: 257 | True Fraud Detected: 0 | Accuracy: 0.4903 | Time: 0.1779 seconds
+2025-06-12 10:49:30,256 [INFO] Received command c on object id p0
+2025-06-12 10:49:30,446 [INFO] Batch 2 | Quantity: 717 | True Fraud Detected: 0 | Accuracy: 0.5411 | Time: 0.1861 seconds
+2025-06-12 10:49:40,228 [INFO] Received command c on object id p0
+2025-06-12 10:49:40,429 [INFO] Batch 3 | Quantity: 909 | True Fraud Detected: 0 | Accuracy: 0.4862 | Time: 0.1980 seconds
+2025-06-12 10:49:50,250 [INFO] Received command c on object id p0
+2025-06-12 10:49:50,417 [INFO] Batch 4 | Quantity: 919 | True Fraud Detected: 0 | Accuracy: 0.5180 | Time: 0.1630 seconds
+2025-06-12 10:50:00,243 [INFO] Received command c on object id p0
+2025-06-12 10:50:00,424 [INFO] Batch 5 | Quantity: 914 | True Fraud Detected: 0 | Accuracy: 0.5109 | Time: 0.1779 seconds
+2025-06-12 10:50:10,234 [INFO] Received command c on object id p0
+2025-06-12 10:50:10,438 [INFO] Batch 6 | Quantity: 892 | True Fraud Detected: 0 | Accuracy: 0.5090 | Time: 0.1997 seconds
+2025-06-12 10:50:20,239 [INFO] Received command c on object id p0
+2025-06-12 10:50:20,461 [INFO] Batch 7 | Quantity: 906 | True Fraud Detected: 0 | Accuracy: 0.4879 | Time: 0.2179 seconds
+2025-06-12 10:50:30,241 [INFO] Received command c on object id p0
+2025-06-12 10:50:30,464 [INFO] Batch 8 | Quantity: 909 | True Fraud Detected: 0 | Accuracy: 0.5413 | Time: 0.2199 seconds
+2025-06-12 10:50:40,206 [INFO] Received command c on object id p0
+2025-06-12 10:50:40,315 [INFO] Batch 9 | Quantity: 914 | True Fraud Detected: 0 | Accuracy: 0.4847 | Time: 0.1057 seconds
+2025-06-12 10:50:50,234 [INFO] Received command c on object id p0
+2025-06-12 10:50:50,374 [INFO] Batch 10 | Quantity: 903 | True Fraud Detected: 0 | Accuracy: 0.4994 | Time: 0.1356 seconds
