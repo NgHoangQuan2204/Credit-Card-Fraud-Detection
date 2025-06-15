@@ -14,8 +14,7 @@
 - Using `cmd`
   - Run `C:\kafka\bin\windows\zookeeper-server-start.bat C:\kafka\config\zookeeper.properties` to start Zookeeper server
   - Run `C:\kafka\bin\windows\kafka-server-start.bat C:\kafka\config\server.properties` to start Kafka server
-  - (Create topic Project if haven't) Run `C:\kafka\bin\windows\kafka-topics.bat --create --topic Project --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1`
-  - Run `C:\kafka\bin\windows\kafka-console-consumer.bat --topic Project --bootstrap-server localhost:9092 --from-beginning` to start a consumer
+  - Run `C:\kafka\bin\windows\kafka-console-consumer.bat --topic CCT --bootstrap-server localhost:9092 --from-beginning` to start a consumer
 
 ### Apache Spark
 - You can config file `SparkStream.py` before running Spark to select models and change the name of the ouput log file.
